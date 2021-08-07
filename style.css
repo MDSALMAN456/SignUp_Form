@@ -1,0 +1,129 @@
+*
+{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+
+}
+
+body
+{
+    background-image:linear-gradient(to left,rgba(116, 235, 213, 0.6),rgba(159,172,230,0)), url("pic1.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.container
+{
+    background-color: white;
+    width: calc(100vw-65vw);
+    max-width: 100%;
+    border-radius:10px;
+    box-shadow: 3px 3px 15px black;
+    opacity: 0.9;
+    font-weight: bold;
+
+}
+.header
+{
+    background:linear-gradient(to left, #74ebd5, #9face6);
+    font-size:17px;
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'Mulish', sans-serif;
+    border-radius:10px 10px 0px 0px;
+}
+.form
+{
+    padding: 30px 40px 30px 40px;
+    /* padding: 40px; */
+}
+.form-control
+{
+    position: relative;
+    margin-bottom:30px;
+}
+.form-control label
+{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family:'Mulish', sans-serif;
+    font-size: 13px;
+}
+.form-control input
+{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    font-family:'Montserrat', sans-serif;
+    font-size:11px;
+    padding:10px;
+    border-radius: 5px;
+    /* display: block; */
+}
+.form-control input:focus
+{
+    outline:0;
+    border-color: #777;
+
+}
+.form-control.success input
+{
+    border-color: #2ecc71;
+}
+.form-control.error input
+{
+    border-color:#e74c3c;
+}
+.form-control i
+{
+    position: absolute;
+    right: 5%;
+    top: 32px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle
+{
+    color:#2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle
+{
+    color:#e74c3c;
+    visibility: visible;
+}
+.form-control small
+{
+    color:#e74c3c;
+    position: absolute;
+    left:0;
+    bottom:-20px;
+    visibility: hidden;
+}
+.form-control.error small
+{
+    visibility:visible;
+}
+.form .btn
+{
+    font-size:15px;
+    padding:15px 0px;
+    font-family: 'Mulish', sans-serif;
+    display: block;
+    color: white;
+    border-radius:6px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+    color:black;
+    background:linear-gradient(to left, #74ebd5, #9face6);
+}
+.form .btn:hover
+{
+    background-color:#2ecc71; 
+    cursor: pointer;
+}
